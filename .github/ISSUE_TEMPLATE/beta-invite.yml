@@ -1,0 +1,44 @@
+name: Request a beta invite
+description: Ask for a code to try the Terminus beta on your Mac.
+title: "Beta invite: "
+labels: ["beta-invite"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for wanting to try Terminus. Codes are personal and sent privately, never posted here.
+        This page is public, so don't write anything here you wouldn't want others to see.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      description: The beta code carries it, and Terminus shows it in Settings.
+    validations:
+      required: true
+  - type: checkboxes
+    id: agents
+    attributes:
+      label: Which coding agents do you use?
+      options:
+        - label: Claude Code
+        - label: Codex
+        - label: Antigravity or Gemini
+        - label: Local models (Ollama, LM Studio)
+        - label: Something else
+  - type: textarea
+    id: use
+    attributes:
+      label: What would you use Terminus for?
+      description: A sentence or two is plenty.
+  - type: input
+    id: contact
+    attributes:
+      label: How should we send your code? (optional)
+      description: For example a handle on X or Discord. Leave it empty to get a reply on this issue asking where to send it.
+  - type: checkboxes
+    id: mac
+    attributes:
+      label: Your Mac
+      options:
+        - label: I have an Apple Silicon Mac (M1 or newer) with macOS 13 or later.
+          required: true
