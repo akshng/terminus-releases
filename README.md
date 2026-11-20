@@ -10,4 +10,4 @@ Installed copies of Terminus check here for updates. Each release has:
 - `latest.json`: the version, the archive's SHA-256 and an Ed25519 signature. Terminus checks
   the signature against a key built into the app before installing anything.
 
-More at https://akshng.github.io/terminus-site/
+More at https://useterminus.github.io/
